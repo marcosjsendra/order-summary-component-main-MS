@@ -1,0 +1,193 @@
+/* CCS Resets */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* Apariencia */
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Red Hat Display', sans-serif !important; 
+}
+
+/* CSS Variables */
+
+:root {
+
+/* Primaries */
+
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+
+/* Neutrales */
+
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+
+}
+
+body {
+  background: hsl(225, 100%, 94%) url(/images/pattern-background-desktop.svg) top left/contain no-repeat;
+}
+
+.card {
+  /* border: red 1px solid; */
+  width: 28rem;
+  margin: 10rem auto;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0rem 1rem 1rem hsla(0, 0%, 0%, 0.08);
+}
+
+.card_img {
+  width: 100%;
+}
+
+.card_content {
+  padding: 3rem 2.8rem;
+}
+
+
+.card_tittle {
+  /* border: red 1px solid; */
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.card_text {
+  /* border: blue 1px solid; */
+  text-align: center;
+  font-size: 1rem;
+  
+  line-height: 1.5rem;
+  color: var(--desaturated-blue);
+  margin: 1rem;
+}
+
+.card_price {
+  /* border: gold 1px solid; */
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: var(--very-pale-blue);
+  padding: 1.7rem;
+}
+
+.price_icon {
+  /* background-color: red; */
+  margin-right: 1.4rem  ;
+}
+
+.price_plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price_tittle {
+  color: var(--dark-blue);
+  margin-bottom: .35rem;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.price_text {
+  color: var(--desaturated-blue);
+  font-size: 1rem;
+}
+
+.price_anchor {
+  margin-left: auto;
+  font-size: .9rem;
+  font-weight: 900;
+  color: var(--bright-blue);
+}
+
+.price_anchor:hover {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+}
+
+.card_btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.7rem;
+}
+
+.card_btn > * {
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: .75rem;
+  font-size: .95rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card_btn :first-child {
+  margin-bottom: 1rem;
+  background-color: var(--bright-blue);
+  box-shadow: 0rem 1rem 1rem hsla(0, 0%, 0%, 0.08);
+}
+
+.card_btn :first-child:hover {
+  background-color: var(--desaturated-blue);
+}
+
+.card_btn :last-child {
+  background: none;
+  font-weight: 900;
+  color: var(--desaturated-blue);
+}
+
+.card_btn :last-child:hover {
+  color: var(--dark-blue);
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 20rem;
+  }
+
+  .card_content {
+    padding: 2rem 2rem;
+  }
+
+  .card_tittle {
+    font-size: 1.4rem;
+  }
+
+  .card_text {
+    font-size: .95rem;
+    line-height: 1.45rem;
+  }
+
+  .card_price {
+    padding: 1.2rem;
+  }
+
+  .price_icon {
+    margin-right: 1rem;
+  }
+
+  .price_tittle {
+    font-size: 0.9rem;
+  }
+
+  .price_text {
+    font-size: 0.9rem;
+  }
+  
+}
