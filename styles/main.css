@@ -159,7 +159,7 @@ body {
 @media screen and (max-width: 400px) {
 
   body {
-    background: hsl(225, 100%, 94%) url('https://marcosjsendra.github.io/order-summary-component-main-MS/images/pattern-background-mobile.svg') top left/cover no-repeat;
+    background: hsl(225, 100%, 94%) url('https://marcosjsendra.github.io/order-summary-component-main-MS/images/pattern-background-mobile.svg') top left/contain no-repeat;
   }
 
   .card {
